@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essence Coffee Palace</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            margin: 20px auto;
+            width: 80%;
+        }
+        .menu-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* JavaScript */
+        function validateOrderForm() {
+            var name = document.forms["orderForm"]["name"].value;
+            var email = document.forms["orderForm"]["email"].value;
+            var phone = document.forms["orderForm"]["phone"].value;
+            var address = document.forms["orderForm"]["address"].value;
+            if (name == "" || email == "" || phone == "" || address == "") {
+                alert("Please fill in all fields.");
+                return false;
+            }
+        }
+        function validateRegistrationForm() {
+            var name = document.forms["registrationForm"]["name"].value;
+            var email = document.forms["registrationForm"]["email"].value;
+            var username = document.forms["registrationForm"]["username"].value;
+            var password = document.forms["registrationForm"]["password"].value;
+            var phone = document.forms["registrationForm"]["phone"].value;
+            var address = document.forms["registrationForm"]["address"].value;
+            if (name == "" || email == "" || username == "" || password == "" || phone == "" || address == "") {
+                alert("Please fill in all fields.");
+                return false;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #4CAF50; color: white;">
+        <h1>Essence Coffee Palace</h1>
+        <p>Contact: 123-456-7890 | info@essencecoffee.com</p>
+        <p>Welcome to Essence Coffee Palace! Enjoy our delicious coffee and treats.</p>
+    </header>
+    <div class="container">
+        <!-- Rest of your HTML content -->
+    </div>
+    <footer>
+        <!-- Rest of your HTML content -->
+    </footer>
+</body>
+</html>
