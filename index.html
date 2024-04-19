@@ -12,7 +12,7 @@
             padding: 0;
         }
         header {
-            background-color: #388E3C; /* Darker shade of green */
+            background-color: #388E3C; /* Darker shade of green for better contrast */
             color: white;
             text-align: center;
             padding: 20px 0;
@@ -69,10 +69,112 @@
         <p>Welcome to Essence Coffee Palace! Enjoy our delicious coffee and treats.</p>
     </header>
     <div class="container">
-        <!-- Rest of your HTML content -->
+        <section>
+            <h2>Menu</h2>
+            <div class="menu-item">
+                <h3>Espresso</h3>
+                <p>A strong, concentrated coffee made by forcing hot water through finely-ground coffee beans.</p>
+                <img src="espresso.jpg" alt="Espresso">
+            </div>
+            <div class="menu-item">
+                <h3>Cappuccino</h3>
+                <p>Espresso combined with steamed milk and topped with frothed milk foam.</p>
+                <img src="cappuccino.jpg" alt="Cappuccino">
+            </div>
+            <div class="menu-item">
+                <h3>Latte</h3>
+                <p>Espresso mixed with steamed milk and a small amount of foam.</p>
+                <img src="latte.jpg" alt="Latte">
+            </div>
+            <div class="menu-item">
+                <h3>Mocha</h3>
+                <p>Espresso combined with chocolate syrup, steamed milk, and topped with whipped cream.</p>
+                <img src="mocha.jpg" alt="Mocha">
+            </div>
+            <div class="menu-item">
+                <h3>Americano</h3>
+                <p>Espresso shots diluted with hot water, resulting in a similar strength to drip coffee but with a different flavor profile.</p>
+                <img src="americano.jpg" alt="Americano">
+            </div>
+        </section>
+        <section>
+            <h2>Popular Choices</h2>
+            <ul>
+                <li>Vanilla Latte</li>
+                <li>Espresso Shot</li>
+                <li>Chocolate Chip Cookies</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Customization Options</h2>
+            <p>Choose your drink size:</p>
+            <select>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <br>
+            <p>Extras:</p>
+            <input type="checkbox" id="whippedCream" name="whippedCream">
+            <label for="whippedCream">Whipped Cream</label><br>
+            <input type="checkbox" id="chocolateSyrup" name="chocolateSyrup">
+            <label for="chocolateSyrup">Chocolate Syrup</label><br>
+            <input type="checkbox" id="caramel" name="caramel">
+            <label for="caramel">Caramel</label><br>
+        </section>
+        <section>
+            <h2>Place Your Order</h2>
+            <form name="orderForm" onsubmit="return validateOrderForm()">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="phone">Phone:</label><br>
+                <input type="text" id="phone" name="phone"><br>
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address"></textarea><br>
+                <input type="submit" value="Place Order">
+            </form>
+        </section>
+        <section>
+            <h2>User Registration</h2>
+            <form name="registrationForm" onsubmit="return validateRegistrationForm()">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br>
+                <label for="phone">Phone:</label><br>
+                <input type="text" id="phone" name="phone"><br>
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address"></textarea><br>
+                <input type="submit" value="Register">
+            </form>
+        </section>
+        <section>
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br>
+                <input type="submit" value="Login">
+            </form>
+        </section>
     </div>
     <footer>
-        <!-- Rest of your HTML content -->
+        <h3>Follow us on social media:</h3>
+        <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com"><img src="twitter.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"></a>
+        <h3>Subscribe to our newsletter:</h3>
+        <form>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <input type="submit" value="Subscribe">
+        </form>
     </footer>
 </body>
 </html>
